@@ -6,6 +6,7 @@ use GuzzleHttp\Client;
 $client = new Client([
     // Base URI is used with relative requests
     'base_uri' => 'https://hltv-api.vercel.app/',
+    'verify' => false
 ]);
 
 $response = $client->request('GET', '/api/news', [

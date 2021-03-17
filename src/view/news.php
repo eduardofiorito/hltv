@@ -7,7 +7,7 @@
         <img class="mr-3" src="../assets/img/favicon.png" alt="" width="48" height="48">
         <div class="lh-100">
             <h1 class="mb-0 lh-100 h3 font-weight-bold">News</h1>
-            <small>Main news about the Counter-Strike Global Offensive scenario.</small>
+            <small>10 most recent news about the Counter-Strike: Global Offensive scenario posted on <a class="custom-link" href="https://www.hltv.org/" rel="noreferrer" target="_blank">HLTV.org</a>.</small>
         </div>
     </div>
 
