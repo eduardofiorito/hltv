@@ -1,5 +1,5 @@
 <?php
 
-header('Location: src/server/getNews.php');
+header('Location: src/view/index.php');
 
 

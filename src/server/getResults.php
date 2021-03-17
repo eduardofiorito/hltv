@@ -16,7 +16,9 @@ $response = $client->request('GET', '/api/results', [
  
  
 $body = $response->getBody();
-$arr_body = json_decode($body);
+
+$results = json_decode($body);
 echo '<pre>';
-print_r($arr_body);
+print_r($results);
 echo '</pre>';
+
