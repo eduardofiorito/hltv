@@ -19,29 +19,31 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" href="../assets/img/favicon.png" />
-    
- 
+
+
     <title>CS:GO News & Coverage | HLTV.org</title>
 </head>
 
 <body>
     <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-md-5">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark px-md-5 navbar-fixed-top">
 
-        <a class="navbar-brand" href="index.php">
-            <img src="../assets/img/logo.svg" alt="Logo cs go">
-        </a>
+        <nav class="container">
+            <a class="navbar-brand" href="index.php">
+                <img src="../assets/img/logo.svg" alt="Logo cs go">
+            </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.php#news">News</a>
-                <a class="nav-item nav-link" href="">Matches</a>
-                <a class="nav-item nav-link" href="">Stats</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.php">News</a>
+                    <a class="nav-item nav-link" href="results.php">Results</a>
+                </div>
             </div>
-        </div>
+        </nav>
 
-    </nav>
+
+    </header>

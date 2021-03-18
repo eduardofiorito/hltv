@@ -1,5 +1,6 @@
 <?php
 require_once "../../vendor/autoload.php";
+require_once "api.php";
 
 use GuzzleHttp\Client;
 
@@ -9,23 +10,18 @@ $client = new Client([
     'verify' => false
 ]);
 
-$response = $client->request('GET', '/api/news', [
-    'query' => [
-        'page' => '2',
-    ]
-]);
+$response = $client->request('GET', '/api/news');
 
 $body = $response->getBody();
 
 $getNews = json_decode($body);
 
+// guarda os dados em um array associativo
 $getNews = objectToArray($getNews);
 
-/*
-echo '<pre>';
-print_r($getNews);
-echo '</pre>';
-*/
+// envia os dados para a api processar
+process($getNews);
+
 
 function objectToArray($object)
 {
