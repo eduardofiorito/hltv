@@ -25,18 +25,18 @@ p {
     color: #ff69b4
 }
 
-.news:hover {
+.news:hover, .results:hover {
     text-decoration: none;
     background-color: #1a1a1a
 }
 
-.news-title {
+.news-title, .result-title {
     font-size: 1rem;
     color: #d9d9d9;
     font-weight: 700
 }
 
-.news-description {
+.news-description, .result-description {
     font-size: .9rem;
     color: #c2c2c2
 }
@@ -47,4 +47,13 @@ p {
 
 .custom-link:hover {
     color: #ff69b4
+}
+
+.results {
+    text-decoration: none;
+    color: #d9d9d9
+}
+
+.results:hover {
+    color: #d9d9d9
 }

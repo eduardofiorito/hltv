@@ -2,7 +2,7 @@
     require_once '../server/getNews.php';
 ?>
 
-<main role="main" id="news" class="container">
+<main role="main" class="container mt-4">
     <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-dark rounded box-shadow">
         <img class="mr-3" src="../assets/img/favicon.png" alt="" width="48" height="48">
         <div class="lh-100">
