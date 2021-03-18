@@ -7,13 +7,9 @@ curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 
 $response = curl_exec($client);
 
-$result = json_decode($response);
+$getNews = json_decode($response);
 
-$result = objectToArray($result);
-
-echo '<pre>';
-var_dump($result);
-echo '</pre>';
+$getNews = objectToArray($getNews);
 
 function objectToArray($object)
 {

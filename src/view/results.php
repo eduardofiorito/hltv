@@ -1,6 +1,6 @@
 <?php
 
-require_once '../server/getResults.php';
+require_once '../client/getResults.php';
 require_once 'partials/header.php';
 
 ?>

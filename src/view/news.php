@@ -1,5 +1,5 @@
 <?php
-    require_once '../server/getNews.php';
+    require_once '../client/getNews.php';
 ?>
 
 <main role="main" class="container mt-4">

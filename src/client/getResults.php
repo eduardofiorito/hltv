@@ -1,20 +1,25 @@
 <?php
-require_once "../../vendor/autoload.php";
+$url = 'http://localhost/GitHub/hltv/src/server/getResults';
 
-use GuzzleHttp\Client;
- 
-$client = new Client([
-    // Base URI is used with relative requests
-    'base_uri' => 'https://hltv-api.vercel.app/', // trocar para o endpoint local posteriormente: https://localhost/
-    'verify' => false
-]);
+$client = curl_init($url);
 
-$response = $client->request('GET', '/api/results');
- 
- 
-$body = $response->getBody();
+curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 
-$results = json_decode($body);
-echo '<pre>';
-print_r($results);
-echo '</pre>';
+$response = curl_exec($client);
+
+$getResults = json_decode($response);
+
+$getResults = objectToArray($getResults);
+
+function objectToArray($object)
+{
+    if (is_object($object)) {
+        $object = get_object_vars($object);
+    }
+
+    if (is_array($object)) {
+        return array_map(__FUNCTION__, $object);
+    } else {
+        return $object;
+    }
+}
